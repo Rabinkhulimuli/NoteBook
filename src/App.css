@@ -1,0 +1,132 @@
+.textbox{
+    font-weight:600;
+}
+.text-box{
+    float:right;
+    width:100%;
+    height:50vw;
+    border:2px solid rgba(39, 137, 155, 0.671);
+    border-radius:10px;
+    z-index:1;
+}
+.but-on{
+    font-size:0.8rem;
+    font-weight:700;
+    background-color:tomato;
+    text-align:center;
+    padding:5px;
+    border-radius:10px;
+    border:2px solid orangered;
+}
+.box-note{
+    display:flex;
+}
+.added-item{
+    width:200px;
+    height:100%;
+    background-color:rgba(28, 204, 122, 0.692);
+    padding:5px;
+    border:5px solid skyblue;
+    border-radius:10px;
+}
+.title{
+    font-size:1.5rem;
+    text-align:center;
+    background:linear-gradient(25deg,red,yellow,green,rgba(240, 17, 91, 0.733));
+    margin:0;
+    border-radius:10px;
+}
+.note-name{
+    display:flex;
+    justify-content: space-between;
+    cursor:pointer;
+    background-color:rgba(224, 221, 42, 0.192);
+    padding:0px 5px;
+    border:2px solid rgba(73, 69, 69, 0.39);
+    border-radius:10px;
+    margin:1px;
+    align-items:center;
+}
+.rename{
+    height:30px;
+    width:30px;
+    font-size:2rem;
+    margin:0;
+    background-color:rgba(51, 236, 60, 0.356);
+    border-radius:50%;
+    border:rgba(28, 204, 122, 0.692);
+    transition:background 1s,color 1s;
+}
+.rename:hover{
+    background-color:rgb(10, 228, 10);
+    color:white;
+}
+.delete-note{
+    color:red;
+    font-weight:600;
+    transition:background 1s,color 1s;
+}
+.delete-note:hover{
+    background-color:red;
+    color:white;
+    
+}
+.rename-input{
+    height:22px;
+    border:2px solid black;
+    background:linear-gradient(45deg,green,red,blue,yellow);
+    border-radius:10px;
+    margin-bottom:5px;
+    padding:0;
+}
+.rename-input > p{
+    color:white;
+    font-weight:700;
+    font-size:1rem;
+    letter-spacing:1px;
+    display:inline;
+}
+.input-box{
+    width:100%;
+    margin-left:10px;
+}
+.ok-btn{
+    margin-right:10px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    border-left:none;
+    border-style:none;
+    height:21.02px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+.inpt-box{
+    margin:0;
+    padding:0;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    border-right:none;
+    height:18px;
+    text-align:center;
+    border-color:white;
+}
+@media screen and (max-width:600px) {
+    .rename-input{
+        height:50px;
+        background-color:rgba(177, 171, 171, 0.534);
+    }
+    .rename-input > p{
+        text-wrap:nowrap;
+        text-align:center;
+        margin-top:5px;
+        font-size:1.2rem;
+        background-color:green;
+        border-radius:10px;
+    }
+    .inpt-box{
+        width:55vw;
+        display:inline-block;
+        margin-bottom:0;
+    }
+}
